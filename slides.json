@@ -1,0 +1,316 @@
+{
+    "slides": [
+        {
+            "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-1.jpeg",
+            "alt": "Piscina ao ar livre com vista para área verde",
+            "title": "Unidade Rio de Janeiro",
+            "description": "Piscina externa cercada por natureza, perfeita para lazer e bem-estar",
+            "details": "Contato com a natureza · Relaxamento · Ambiente acolhedor",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-2.jpeg",
+            "alt": "Unidade Rio de Janeiro",
+            "title": "Unidade Rio de Janeiro",
+            "description": "Piscina em ambiente arborizado, ideal para momentos de tranquilidade",
+            "details": "Ambiente arejado · Lazer e descanso · Conexão com a natureza",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-3.jpeg",
+            "alt": "Unidade Rio de Janeiro",
+            "title": "Unidade Rio de Janeiro",
+            "description": "Área externa ampla, integrada à natureza",
+            "details": "Espaços abertos · Convivência saudável · Atmosfera acolhedora",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-4.jpeg",
+            "alt": "Entrada para dormitório aconchegante",
+            "title": "Unidade Rio de Janeiro",
+            "description": "Porta de acesso ao dormitório, que transmite conforto e privacidade",
+            "details": "Ambiente seguro · Conforto · Espaço acolhedor",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-5.jpeg",
+            "alt": "Unidade Rio de Janeiro",
+            "title": "Unidade Rio de Janeiro",
+            "description": "Dormitórios compartilhados que estimulam a convivência e o apoio mútuo",
+            "details": "Integração · Apoio coletivo · Ambiente seguro",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-6.jpeg",
+            "alt": "Unidade Rio de Janeiro",
+            "title": "Unidade Rio de Janeiro",
+            "description": "Ambiente reservado para encontros espirituais e momentos de reflexão",
+            "details": "Espaço de fé · Conexão espiritual · Ambiente de paz",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-7.jpeg",
+            "alt": "Banheiro moderno e bem iluminado",
+            "title": "Unidade Rio de Janeiro",
+            "description": "Banheiro espaçoso, pensado para conforto e praticidade",
+            "details": "Higiene · Conforto · Funcionalidade",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-8.jpeg",
+            "alt": "Unidade Rio de Janeiro",
+            "title": "Unidade Rio de Janeiro",
+            "description": "Dormitórios duplos aconchegantes, ideais para quem busca privacidade",
+            "details": "Aconchego · Conforto · Privacidade",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/BALNEARIO CAMBORIU/balneariocamb-2.webp",
+            "alt": "Prédio central da clínica em Balneário Camboriú com dormitórios modernos",
+            "title": "Balneario Camboriú - Santa Catarina",
+            "description": "Prédio central com dormitórios confortáveis e bem estruturados",
+            "details": "Conforto · Estrutura moderna · Espaço acolhedor",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/BALNEARIO CAMBORIU/balneariocamb-5.webp",
+            "alt": "Sala da clínica em Balneário Camboriú preparada para reuniões em grupo",
+            "title": "Balneario Camboriú - Santa Catarina",
+            "description": "Ambiente preparado para reuniões em grupo e momentos de integração",
+            "details": "Convivência · Apoio mútuo · Ambiente colaborativo",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/BALNEARIO CAMBORIU/balneariocamb-8.webp",
+            "alt": "Piscina ao ar livre na unidade de Balneário Camboriú, rodeada de natureza",
+            "title": "Balneario Camboriú - Santa Catarina",
+            "description": "Piscina ao ar livre para lazer, descanso e revitalização",
+            "details": "Contato com a natureza · Relaxamento · Espaço revitalizante",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/BALNEARIO CAMBORIU/balneariocamb-9.webp",
+            "alt": "Lago com ponte charmosa no espaço externo da clínica em Balneário Camboriú",
+            "title": "Balneario Camboriú - Santa Catarina",
+            "description": "Lago com ponte charmosa, cenário perfeito para momentos de reflexão",
+            "details": "Harmonia · Contato com a natureza · Ambiente inspirador",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/PORTO ALEGRE/portoalegre-1.webp",
+            "alt": "Área externa da clínica em Porto Alegre cercada de verde e espaço para convivência",
+            "title": "Porto Alegre - MG",
+            "description": "Área externa ampla e integrada à natureza, ideal para momentos de tranquilidade",
+            "details": "Contato com a natureza · Espaço de convivência · Atmosfera acolhedora",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/PORTO ALEGRE/portoalegre-2.webp",
+            "alt": "Área externa da clínica em Porto Alegre com mesa de sinuca em espaço de lazer",
+            "title": "Porto Alegre - MG",
+            "description": "Área externa com mesa de sinuca, pensada para lazer e descontração",
+            "details": "Lazer saudável · Integração social · Relaxamento",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/PORTO ALEGRE/portoalegre-3.webp",
+            "alt": "Piscina ao ar livre na unidade de Porto Alegre, rodeada de área externa agradável",
+            "title": "Porto Alegre - MG",
+            "description": "Área externa com piscina ao ar livre para descanso e bem-estar",
+            "details": "Relaxamento · Contato com a água · Espaço revitalizante",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/GUARULHOS/guarulhos-1.webp",
+            "alt": "Área aconchegante na clínica de Guarulhos com sofás para reuniões e convivência",
+            "title": "Guarulhos - SP",
+            "description": "Espaço acolhedor com sofás, ideal para reuniões e momentos de troca",
+            "details": "Conforto · Convivência · Ambiente acolhedor",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/GUARULHOS/guarulhos-2.webp",
+            "alt": "Área externa da clínica em Guarulhos com piscina e quadra esportiva",
+            "title": "Guarulhos - SP",
+            "description": "Área externa ampla com piscina e quadra, unindo lazer e atividade física",
+            "details": "Lazer saudável · Esporte · Integração social",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/GUARULHOS/guarulhos-3.webp",
+            "alt": "Área externa em Guarulhos com bancos para descanso e contemplação",
+            "title": "Guarulhos - SP",
+            "description": "Área externa com bancos confortáveis, perfeita para descanso e reflexão",
+            "details": "Relaxamento · Contato com a natureza · Bem-estar",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-1.webp",
+            "alt": "Banheiro moderno em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Banheiro amplo, com acabamento moderno e confortável",
+            "details": "Conforto · Praticidade · Higiene",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-2.webp",
+            "alt": "Quarto iluminado com janela em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Quarto aconchegante com janela para iluminação natural",
+            "details": "Descanso · Aconchego · Bem-estar",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-3.webp",
+            "alt": "Quarto compartilhado com ar-condicionado em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Quarto compartilhado com ar-condicionado e janela para ventilação",
+            "details": "Conforto · Convivência · Clima agradável",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-4.webp",
+            "alt": "Área externa de lazer com piscina em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Área de lazer ao ar livre com piscina, ideal para relaxar e se divertir",
+            "details": "Diversão · Relaxamento · Convivência",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-5.webp",
+            "alt": "Auditório em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Auditório espaçoso para reuniões, palestras e eventos",
+            "details": "Eventos · Integração · Aprendizado",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-6.webp",
+            "alt": "Piscina em área de lazer de São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Piscina convidativa em área de lazer para momentos de descontração",
+            "details": "Lazer · Diversão · Bem-estar",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-7.webp",
+            "alt": "Escadaria cercada por natureza em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Escadaria rodeada por vegetação, unindo arquitetura e natureza",
+            "details": "Contato com a natureza · Tranquilidade · Harmonia",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-8.webp",
+            "alt": "Área de lazer com piscina em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Espaço de lazer com piscina, perfeito para atividades ao ar livre",
+            "details": "Lazer · Convivência · Diversão",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-9.webp",
+            "alt": "Mini parque com árvores e gramado em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Mini parque arborizado com gramado, ideal para relaxar em meio à natureza",
+            "details": "Contato com a natureza · Recreação · Bem-estar",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-10.webp",
+            "alt": "Dormitórios em São Cristóvão",
+            "title": "São Cristóvão - SE",
+            "description": "Dormitórios planejados para conforto e descanso tranquilo",
+            "details": "Aconchego · Praticidade · Conforto",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/XANGRI LA/xangrila-1.webp",
+            "alt": "Fachada da clínica Xangrilá",
+            "title": "Xangrilá - SP",
+            "description": "Clínica Xangrilá vista de fora, com entrada principal acolhedora",
+            "details": "Recepção · Acolhimento · Profissionalismo",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/XANGRI LA/xangrila-2.webp",
+            "alt": "Reunião de pessoas na piscina da clínica Xangrilá",
+            "title": "Xangrilá - SP",
+            "description": "Pessoas aproveitando a piscina durante reunião ao ar livre, integração e descontração",
+            "details": "Lazer · Convívio · Relaxamento",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/XANGRI LA/xangrila-3.webp",
+            "alt": "Área de lazer com mesa de sinuca em Xangrilá",
+            "title": "Xangrilá - SP",
+            "description": "Espaço de lazer interno com mesa de sinuca, perfeito para diversão e socialização",
+            "details": "Diversão · Convívio · Relaxamento",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/XANGRI LA/xangrila-4.webp",
+            "alt": "Planta decorativa na clínica Xangrilá",
+            "title": "Xangrilá - SP",
+            "description": "Detalhe de uma planta decorativa, trazendo vida e frescor ao ambiente",
+            "details": "Decoração · Natureza · Harmonia",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SALVADOR/salvador-1.webp",
+            "alt": "Reunião de pessoas ao redor da piscina em Salvador",
+            "title": "Salvador - BA",
+            "description": "Reunião ao ar livre ao redor da piscina, integrando trabalho e descontração",
+            "details": "Integração · Lazer · Colaboração",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/SALVADOR/salvador-2.webp",
+            "alt": "Homem de blusa verde sentado durante reunião em Salvador",
+            "title": "Salvador - BA",
+            "description": "Reunião interna com participante sentado em cadeira, ambiente acolhedor e produtivo",
+            "details": "Colaboração · Convívio · Acolhimento",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SALVADOR/salvador-3.webp",
+            "alt": "Conversa em grupo ao ar livre em Salvador",
+            "title": "Salvador - BA",
+            "description": "Reunião ao ar livre, promovendo interação e troca de ideias em grupo",
+            "details": "Integração · Natureza · Dinâmica",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SALVADOR/salvador-4.webp",
+            "alt": "Reunião em torno da piscina em Salvador",
+            "title": "Salvador - BA",
+            "description": "Participantes reunidos ao redor da piscina, combinando lazer e networking",
+            "details": "Lazer · Convívio · Bem-estar",
+            "showInSlide": true
+        },
+        {
+            "image": "./assets/images/carrossel/SALVADOR/salvador-5.webp",
+            "alt": "Área de lazer com piscina e casas ao redor em Salvador",
+            "title": "Salvador - BA",
+            "description": "Espaço de lazer com piscina, grama e pequenas casas ao redor, perfeito para relaxar",
+            "details": "Relaxamento · Lazer · Natureza",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SALVADOR/salvador-6.webp",
+            "alt": "Pessoas se cumprimentando em Salvador",
+            "title": "Salvador - BA",
+            "description": "Momento de cumprimentos entre participantes, reforçando networking e cordialidade",
+            "details": "Convívio · Integração · Amizade",
+            "showInSlide": false
+        },
+        {
+            "image": "./assets/images/carrossel/SALVADOR/salvador-7.webp",
+            "alt": "Dormitórios em Salvador",
+            "title": "Salvador - BA",
+            "description": "Dormitórios planejados para conforto e descanso tranquilo dos participantes",
+            "details": "Aconchego · Descanso · Conforto",
+            "showInSlide": false
+        }
+    ]
+}
