@@ -123,7 +123,9 @@
 
             <div class="nav_buttons">
                 <button class="btn-outline-blue">(71) 98290-0675</button>
-                <button class="btn-gradient" onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'">Agendar Consulta</button>
+                <button class="btn-gradient"
+                    onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'">Agendar
+                    Consulta</button>
             </div>
         </header>
         <main>
@@ -142,8 +144,9 @@
                         </p>
                     </div>
                     <div class="d-flex gap-3 mt-4 flex-wrap">
-                        <button class="btn-gradient d-flex align-center fs-1" onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'">Iniciar Tratamento <img class="ms-3"
-                                src="assets/icons/arrow-right.svg" alt="" srcset=""></button>
+                        <button class="btn-gradient d-flex align-center fs-1"
+                            onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'">Iniciar
+                            Tratamento <img class="ms-3" src="assets/icons/arrow-right.svg" alt="" srcset=""></button>
                         <button class="btn-neutral fs-1" onclick="abrirFormulario()">Falar Com Especialista</button>
                     </div>
 
@@ -486,8 +489,10 @@
                             direcionaremos você para a unidade mais próxima da sua região.</p>
                     </div>
                     <div class="text-center mt-5 d-flex gap-3 align-center justify-center flex-wrap">
-                        <button class="btn-gradient d-flex align-center fs-1" onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'"><img class="me-2"
-                                src="assets/icons/telefone.svg" alt="icone de telefone">Falar com especialista</button>
+                        <button class="btn-gradient d-flex align-center fs-1"
+                            onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'"><img
+                                class="me-2" src="assets/icons/telefone.svg" alt="icone de telefone">Falar com
+                            especialista</button>
                         <button onclick="abrirFormulario()"
                             class="btn-outline-neutral btn-neutral d-flex align-center fs-1"><img class="me-2"
                                 src="assets/icons/carta.svg" alt="icone de carta"> Solicitar informações</button>
@@ -548,7 +553,7 @@
 
             </div>
         </section>
-        <section id="contato" class="mt-4">
+        <section id="contato" class="mt-4 container">
             <div class="container-grid">
                 <div>
                     <div class="tittle">
@@ -608,25 +613,27 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="nome">Nome</label>
-                                    <input type="text" id="nome" placeholder="Seu nome completo">
+                                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telefone">Telefone</label>
-                                    <input type="text" id="telefone" placeholder="(11) 99999-9999">
+                                    <input type="text" id="telefone" name="telefone" placeholder="(11) 99999-9999"
+                                        required>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="seu@email.com">
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="mensagem">Mensagem</label>
-                                <textarea id="mensagem" rows="4" placeholder="Como podemos ajudar você?"></textarea>
+                                <textarea id="mensagem" name="mensagem" rows="4"
+                                    placeholder="Como podemos ajudar você?"></textarea>
                             </div>
 
-                            <button class="btn bg-gradient" type="submit">
+                            <button class="btn bg-gradient" type="submit" id="btn-enviar">
                                 Enviar Mensagem
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -695,6 +702,7 @@
     </div>
 
     <script src="src/js/index.js"></script>
+    <script src="src/js/main.js"></script>
     <script>
         const menu = document.querySelector(".menu-toggle");
         const header = document.querySelector("header"); // pega só 1 elemento
@@ -710,6 +718,159 @@
             setTimeout(() => {
                 document.getElementById("nome").focus();
             }, 500); // meio segundo pra dar tempo da rolagem
+        }
+
+        // Configuração profissional de animações
+        const ANIMATION_CONFIG = {
+            threshold: 0.8,
+            rootMargin: '0px 0px -10% 0px',
+            animationDelay: 50
+        };
+
+        // Observer para elementos com Intersection Observer API
+        let observer;
+
+        // Inicializa o Intersection Observer
+        function initObserver() {
+            observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        const delay = parseInt(element.getAttribute('data-animation-delay')) || 0;
+
+                        setTimeout(() => {
+                            element.classList.add('animate-in');
+                            observer.unobserve(element);
+                        }, delay);
+                    }
+                });
+            }, {
+                threshold: ANIMATION_CONFIG.threshold,
+                rootMargin: ANIMATION_CONFIG.rootMargin
+            });
+        }
+
+        // Aplica animações aos elementos
+        function setupAnimations() {
+            // Seção principal
+            document.querySelectorAll('main .main-direito').forEach((el, index) => {
+                el.setAttribute('data-animation', 'fade-up');
+                el.setAttribute('data-animation-delay', index * 100);
+                observer.observe(el);
+            });
+
+            document.querySelectorAll('main .main-esquerdo').forEach((el, index) => {
+                el.setAttribute('data-animation', 'fade-up');
+                el.setAttribute('data-animation-delay', 300 + (index * 100));
+                observer.observe(el);
+            });
+
+            // Seção sobre
+            document.querySelectorAll('#sobre .main-direito').forEach(el => {
+                el.setAttribute('data-animation', 'fade-right');
+                observer.observe(el);
+            });
+
+            document.querySelectorAll('#sobre .main-esquerdo').forEach(el => {
+                el.setAttribute('data-animation', 'fade-left');
+                el.setAttribute('data-animation-delay', 200);
+                observer.observe(el);
+            });
+
+            // Cards de serviços (animação em sequência)
+            document.querySelectorAll('.card-service').forEach((el, index) => {
+                el.setAttribute('data-animation', 'fade-up');
+                el.setAttribute('data-animation-delay', index * 150);
+                observer.observe(el);
+            });
+
+            // Cards de região (animação em sequência)
+            document.querySelectorAll('.card-region').forEach((el, index) => {
+                el.setAttribute('data-animation', 'fade-up');
+                el.setAttribute('data-animation-delay', index * 120);
+                observer.observe(el);
+            });
+
+            // Depoimentos (animação em sequência)
+            document.querySelectorAll('.card-testimonial').forEach((el, index) => {
+                el.setAttribute('data-animation', 'fade-up');
+                el.setAttribute('data-animation-delay', index * 150);
+                observer.observe(el);
+            });
+
+            // Formulário de contato
+            const formContainer = document.querySelector('.form-container');
+            if (formContainer) {
+                formContainer.setAttribute('data-animation', 'fade-up');
+                formContainer.setAttribute('data-animation-delay', 200);
+                observer.observe(formContainer);
+            }
+        }
+
+        // Adiciona os estilos CSS profissionais
+        function addAnimationStyles() {
+            const style = document.createElement('style');
+            style.textContent = `
+        /* Animações profissionais e suaves */
+        [data-animation] {
+            opacity: 0;
+            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        [data-animation].animate-in {
+            opacity: 1;
+            transform: translate3d(0, 0, 0) scale(1) !important;
+        }
+        
+        [data-animation="fade-up"] {
+            transform: translate3d(0, 40px, 0);
+        }
+        
+        [data-animation="fade-right"] {
+            transform: translate3d(-40px, 0, 0);
+        }
+        
+        [data-animation="fade-left"] {
+            transform: translate3d(40px, 0, 0);
+        }
+        
+        /* Melhoria de performance */
+        [data-animation] {
+            will-change: opacity, transform;
+            backface-visibility: hidden;
+        }
+        
+        /* Pequena animação para o contador quando visível */
+        #contadores .fw-900 {
+            transition: transform 0.6s ease;
+        }
+        
+        #contadores .fw-900.animate-in {
+            transform: scale(1.05);
+            transition: transform 0.6s ease;
+        }
+    `;
+            document.head.appendChild(style);
+        }
+
+        // Inicializa tudo quando o DOM estiver pronto
+        document.addEventListener('DOMContentLoaded', function () {
+            addAnimationStyles();
+            initObserver();
+            setupAnimations();
+        });
+
+        // Adiciona fallback para browsers mais antigos
+        if (!('IntersectionObserver' in window)) {
+            // Fallback simples: anima tudo após um delay
+            document.addEventListener('DOMContentLoaded', function () {
+                setTimeout(() => {
+                    document.querySelectorAll('[data-animation]').forEach(el => {
+                        el.classList.add('animate-in');
+                    });
+                }, 500);
+            });
         }
 
     </script>
