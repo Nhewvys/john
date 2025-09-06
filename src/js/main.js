@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             button.innerHTML = "Enviando..."
             button.disabled = true
-            const res = await fetch("https://formspree.io/f/xkgvknk", {
+            const res = await fetch("https://formspree.io/f/xkgvknkl", {
                 method: "POST",
                 headers: { "Content-Type": "application/json", "Accept": "application/json" },
                 body: JSON.stringify(data)
