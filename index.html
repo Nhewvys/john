@@ -123,7 +123,7 @@
 
             <div class="nav_buttons">
                 <button class="btn-outline-blue">(71) 98290-0675</button>
-                <button class="btn-gradient">Agendar Consulta</button>
+                <button class="btn-gradient" onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'">Agendar Consulta</button>
             </div>
         </header>
         <main>
@@ -142,9 +142,9 @@
                         </p>
                     </div>
                     <div class="d-flex gap-3 mt-4 flex-wrap">
-                        <button class="btn-gradient d-flex align-center fs-1">Iniciar Tratamento <img class="ms-3"
+                        <button class="btn-gradient d-flex align-center fs-1" onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'">Iniciar Tratamento <img class="ms-3"
                                 src="assets/icons/arrow-right.svg" alt="" srcset=""></button>
-                        <button class="btn-neutral fs-1">Falar Com Especialista</button>
+                        <button class="btn-neutral fs-1" onclick="abrirFormulario()">Falar Com Especialista</button>
                     </div>
 
                     <div class="d-flex gap-4 mt-5" id="contadores">
@@ -196,7 +196,8 @@
                     </div>
                     <div class="main-frase mt-4">
                         <p class="text-color-1">
-                            Nossas clínicas parceiras são referência no tratamento de dependências químicas, oferecendo ambientes acolhedores e seguros para a recuperação completa dos pacientes.
+                            Nossas clínicas parceiras são referência no tratamento de dependências químicas, oferecendo
+                            ambientes acolhedores e seguros para a recuperação completa dos pacientes.
                         </p>
                     </div>
                     <div class="mt-2">
@@ -240,11 +241,12 @@
                 </div>
             </div>
         </section>
-        <section id="Serviços" class="bg-blue-1 pb-5">
+        <section id="servicos" class="bg-blue-1 pb-5">
             <div class="tittle text-center">
                 <span class="badge badge-roxo mt-4 mb-3">Nossos Serviços</span>
                 <h1 class="fs-2 fw-800 mb-3">Tratamento completo e especializado</h1>
-                <p class="text-color-1">Oferecemos uma gama completa de serviços para garantir a recuperação efetiva e duradoura de nossos pacientes.</p>
+                <p class="text-color-1">Oferecemos uma gama completa de serviços para garantir a recuperação efetiva e
+                    duradoura de nossos pacientes.</p>
             </div>
 
             <div class="mt-4 d-flex flex-wrap gap-4 justify-center">
@@ -484,9 +486,10 @@
                             direcionaremos você para a unidade mais próxima da sua região.</p>
                     </div>
                     <div class="text-center mt-5 d-flex gap-3 align-center justify-center flex-wrap">
-                        <button class="btn-gradient d-flex align-center fs-1"><img class="me-2"
+                        <button class="btn-gradient d-flex align-center fs-1" onclick="window.location.href='https://wa.me/5571982900675?text=Olá,%20encontrei%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20tratamento.'"><img class="me-2"
                                 src="assets/icons/telefone.svg" alt="icone de telefone">Falar com especialista</button>
-                        <button class="btn-outline-neutral btn-neutral d-flex align-center fs-1"><img class="me-2"
+                        <button onclick="abrirFormulario()"
+                            class="btn-outline-neutral btn-neutral d-flex align-center fs-1"><img class="me-2"
                                 src="assets/icons/carta.svg" alt="icone de carta"> Solicitar informações</button>
                     </div>
                 </div>
@@ -579,7 +582,7 @@
                                 <span class="text-color-1">contato@gruporedencao.com.br</span>
                             </div>
                         </div>
-                        <div class="d-flex gap-3 align-center">
+                        <!-- <div class="d-flex gap-3 align-center">
                             <div class="bg-purple icon-container">
                                 <img src="assets/icons/localização-roxo.svg" alt="icone de localização na cor roxa">
                             </div>
@@ -587,7 +590,7 @@
                                 <p class="fw-600">Endereço</p>
                                 <span class="text-color-1">Rua das Flores, 123 - São Paulo, SP</span>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="d-flex gap-3 align-center">
                             <div class="bg-orange icon-container">
                                 <img src="assets/icons/relogio-orange.svg" alt="icone de um telefone na cor azul">
@@ -601,7 +604,7 @@
                 </div>
                 <div>
                     <div class="form-container">
-                        <form class="form">
+                        <form class="form" id="formContato">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="nome">Nome</label>
@@ -665,10 +668,8 @@
                     <div class="footer-section">
                         <h3>Contato</h3>
                         <ul>
-                            <li>(11) 9999-9999</li>
-                            <li>contato@renovarvida.com.br</li>
-                            <li>Rua das Flores, 123</li>
-                            <li>São Paulo, SP</li>
+                            <li>(71) 98290-0675</li>
+                            <li>contato@gruporedencao.com.br</li>
                         </ul>
                     </div>
 
@@ -701,6 +702,15 @@
         menu.onclick = () => {
             header.classList.toggle("active");
         };
+
+        function abrirFormulario() {
+            // Rola até o formulário
+            document.getElementById("formContato").scrollIntoView({ behavior: "smooth" });
+            // Espera a rolagem terminar e dá foco no campo
+            setTimeout(() => {
+                document.getElementById("nome").focus();
+            }, 500); // meio segundo pra dar tempo da rolagem
+        }
 
     </script>
 </body>
