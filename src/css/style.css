@@ -1070,3 +1070,342 @@ main {
         padding: 1rem;
     }
 }
+
+
+/* animações */
+.animate-element {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* ===================================
+   ANIMAÇÕES PRINCIPAIS OTIMIZADAS
+   =================================== */
+
+/* Fade In - Entrada suave de baixo para cima */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide In Left - Entrada da esquerda */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide In Right - Entrada da direita */
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Scale In - Entrada com escala */
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ===================================
+   ANIMAÇÕES ESPECÍFICAS DO SITE
+   =================================== */
+
+/* Animação para contadores */
+.counter {
+    transition: transform 0.3s ease;
+}
+
+.counter.animate {
+    transform: scale(1.05);
+}
+
+/* Hover effects otimizados para cards */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animações para elementos específicos do HTML existente */
+
+/* Seção principal (main) */
+main .main-direito {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+main .main-direito.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main .main-esquerdo {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+}
+
+main .main-esquerdo.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Seção sobre */
+#sobre .main-direito {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#sobre .main-direito.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#sobre .main-esquerdo {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+}
+
+#sobre .main-esquerdo.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Cards de serviços */
+.card-service {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-service:nth-child(1) { transition-delay: 0.1s; }
+.card-service:nth-child(2) { transition-delay: 0.2s; }
+.card-service:nth-child(3) { transition-delay: 0.3s; }
+.card-service:nth-child(4) { transition-delay: 0.4s; }
+
+.card-service.animate-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Cards de região */
+.card-region {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-region:nth-child(1) { transition-delay: 0.1s; }
+.card-region:nth-child(2) { transition-delay: 0.2s; }
+.card-region:nth-child(3) { transition-delay: 0.3s; }
+
+.card-region.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Cards de depoimentos */
+.card-testimonial {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-testimonial:nth-child(1) { transition-delay: 0.1s; }
+.card-testimonial:nth-child(2) { transition-delay: 0.2s; }
+.card-testimonial:nth-child(3) { transition-delay: 0.3s; }
+
+.card-testimonial.animate-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Seção de contato */
+#contato .container-grid > div:first-child {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#contato .container-grid > div:first-child.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#contato .form-container {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+}
+
+#contato .form-container.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Títulos de seções */
+.tittle {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tittle.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===================================
+   ACESSIBILIDADE E PERFORMANCE
+   =================================== */
+
+/* Redução de movimento para usuários sensíveis */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    .slide-in-left,
+    .slide-in-right,
+    .scale-in,
+    .counter,
+    .hover-lift,
+    main .main-direito,
+    main .main-esquerdo,
+    #sobre .main-direito,
+    #sobre .main-esquerdo,
+    .card-service,
+    .card-region,
+    .card-testimonial,
+    #contato .container-grid > div,
+    .form-container,
+    .tittle {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .fade-in,
+    .slide-in-left,
+    .slide-in-right,
+    .scale-in,
+    main .main-direito,
+    main .main-esquerdo,
+    #sobre .main-direito,
+    #sobre .main-esquerdo,
+    .card-service,
+    .card-region,
+    .card-testimonial,
+    #contato .container-grid > div,
+    .form-container,
+    .tittle {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* Loading state para evitar flash */
+.loading .animate-element,
+.loading main .main-direito,
+.loading main .main-esquerdo,
+.loading #sobre .main-direito,
+.loading #sobre .main-esquerdo,
+.loading .card-service,
+.loading .card-region,
+.loading .card-testimonial,
+.loading #contato .container-grid > div,
+.loading .form-container,
+.loading .tittle {
+    opacity: 0;
+}
+
+/* ===================================
+   OTIMIZAÇÕES DE PERFORMANCE
+   =================================== */
+
+/* Otimização para GPU */
+.animate-element,
+main .main-direito,
+main .main-esquerdo,
+#sobre .main-direito,
+#sobre .main-esquerdo,
+.card-service,
+.card-region,
+.card-testimonial,
+#contato .container-grid > div,
+.form-container,
+.tittle {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+/* Remove will-change após animação para economizar recursos */
+.animate-in {
+    will-change: auto;
+}
+
+/* Otimização para dispositivos móveis */
+@media (max-width: 768px) {
+    .fade-in,
+    .slide-in-left,
+    .slide-in-right,
+    .scale-in,
+    main .main-direito,
+    main .main-esquerdo,
+    #sobre .main-direito,
+    #sobre .main-esquerdo,
+    .card-service,
+    .card-region,
+    .card-testimonial,
+    #contato .container-grid > div,
+    .form-container,
+    .tittle {
+        transition-duration: 0.4s; /* Animações mais rápidas no mobile */
+    }
+}

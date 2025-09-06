@@ -41,11 +41,6 @@
         <link rel="stylesheet" href="src/css/style.css">
         <!-- <link rel="stylesheet" href="css/performance.css"> -->
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer">
-
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,14 +57,13 @@
         "description": "Clínica de recuperação masculina especializada no tratamento da dependência química, oferecendo acompanhamento terapêutico e suporte profissional.",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Rua Exemplo, 123",
-            "addressLocality": "Cidade",
-            "addressRegion": "Estado",
+            "addressLocality": "Salvador",
+            "addressRegion": "Bahia",
             "addressCountry": "Brasil"
         },
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+55-XX-XXXXX-XXXX",
+            "telephone": "+55-71-98290-0675",
             "contactType": "customer service",
             "availableLanguage": "Portuguese"
         }
@@ -703,177 +697,6 @@
 
     <script src="src/js/index.js"></script>
     <script src="src/js/main.js"></script>
-    <script>
-        const menu = document.querySelector(".menu-toggle");
-        const header = document.querySelector("header"); // pega só 1 elemento
-
-        menu.onclick = () => {
-            header.classList.toggle("active");
-        };
-
-        function abrirFormulario() {
-            // Rola até o formulário
-            document.getElementById("formContato").scrollIntoView({ behavior: "smooth" });
-            // Espera a rolagem terminar e dá foco no campo
-            setTimeout(() => {
-                document.getElementById("nome").focus();
-            }, 500); // meio segundo pra dar tempo da rolagem
-        }
-
-        // Configuração profissional de animações
-        const ANIMATION_CONFIG = {
-            threshold: 0.8,
-            rootMargin: '0px 0px -10% 0px',
-            animationDelay: 50
-        };
-
-        // Observer para elementos com Intersection Observer API
-        let observer;
-
-        // Inicializa o Intersection Observer
-        function initObserver() {
-            observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const element = entry.target;
-                        const delay = parseInt(element.getAttribute('data-animation-delay')) || 0;
-
-                        setTimeout(() => {
-                            element.classList.add('animate-in');
-                            observer.unobserve(element);
-                        }, delay);
-                    }
-                });
-            }, {
-                threshold: ANIMATION_CONFIG.threshold,
-                rootMargin: ANIMATION_CONFIG.rootMargin
-            });
-        }
-
-        // Aplica animações aos elementos
-        function setupAnimations() {
-            // Seção principal
-            document.querySelectorAll('main .main-direito').forEach((el, index) => {
-                el.setAttribute('data-animation', 'fade-up');
-                el.setAttribute('data-animation-delay', index * 100);
-                observer.observe(el);
-            });
-
-            document.querySelectorAll('main .main-esquerdo').forEach((el, index) => {
-                el.setAttribute('data-animation', 'fade-up');
-                el.setAttribute('data-animation-delay', 300 + (index * 100));
-                observer.observe(el);
-            });
-
-            // Seção sobre
-            document.querySelectorAll('#sobre .main-direito').forEach(el => {
-                el.setAttribute('data-animation', 'fade-right');
-                observer.observe(el);
-            });
-
-            document.querySelectorAll('#sobre .main-esquerdo').forEach(el => {
-                el.setAttribute('data-animation', 'fade-left');
-                el.setAttribute('data-animation-delay', 200);
-                observer.observe(el);
-            });
-
-            // Cards de serviços (animação em sequência)
-            document.querySelectorAll('.card-service').forEach((el, index) => {
-                el.setAttribute('data-animation', 'fade-up');
-                el.setAttribute('data-animation-delay', index * 150);
-                observer.observe(el);
-            });
-
-            // Cards de região (animação em sequência)
-            document.querySelectorAll('.card-region').forEach((el, index) => {
-                el.setAttribute('data-animation', 'fade-up');
-                el.setAttribute('data-animation-delay', index * 120);
-                observer.observe(el);
-            });
-
-            // Depoimentos (animação em sequência)
-            document.querySelectorAll('.card-testimonial').forEach((el, index) => {
-                el.setAttribute('data-animation', 'fade-up');
-                el.setAttribute('data-animation-delay', index * 150);
-                observer.observe(el);
-            });
-
-            // Formulário de contato
-            const formContainer = document.querySelector('.form-container');
-            if (formContainer) {
-                formContainer.setAttribute('data-animation', 'fade-up');
-                formContainer.setAttribute('data-animation-delay', 200);
-                observer.observe(formContainer);
-            }
-        }
-
-        // Adiciona os estilos CSS profissionais
-        function addAnimationStyles() {
-            const style = document.createElement('style');
-            style.textContent = `
-        /* Animações profissionais e suaves */
-        [data-animation] {
-            opacity: 0;
-            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-                        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-        
-        [data-animation].animate-in {
-            opacity: 1;
-            transform: translate3d(0, 0, 0) scale(1) !important;
-        }
-        
-        [data-animation="fade-up"] {
-            transform: translate3d(0, 40px, 0);
-        }
-        
-        [data-animation="fade-right"] {
-            transform: translate3d(-40px, 0, 0);
-        }
-        
-        [data-animation="fade-left"] {
-            transform: translate3d(40px, 0, 0);
-        }
-        
-        /* Melhoria de performance */
-        [data-animation] {
-            will-change: opacity, transform;
-            backface-visibility: hidden;
-        }
-        
-        /* Pequena animação para o contador quando visível */
-        #contadores .fw-900 {
-            transition: transform 0.6s ease;
-        }
-        
-        #contadores .fw-900.animate-in {
-            transform: scale(1.05);
-            transition: transform 0.6s ease;
-        }
-    `;
-            document.head.appendChild(style);
-        }
-
-        // Inicializa tudo quando o DOM estiver pronto
-        document.addEventListener('DOMContentLoaded', function () {
-            addAnimationStyles();
-            initObserver();
-            setupAnimations();
-        });
-
-        // Adiciona fallback para browsers mais antigos
-        if (!('IntersectionObserver' in window)) {
-            // Fallback simples: anima tudo após um delay
-            document.addEventListener('DOMContentLoaded', function () {
-                setTimeout(() => {
-                    document.querySelectorAll('[data-animation]').forEach(el => {
-                        el.classList.add('animate-in');
-                    });
-                }, 500);
-            });
-        }
-
-    </script>
 </body>
 
 </html>
