@@ -14,7 +14,7 @@
             "title": "Unidade Rio de Janeiro",
             "description": "Piscina em ambiente arborizado, ideal para momentos de tranquilidade",
             "details": "Ambiente arejado · Lazer e descanso · Conexão com a natureza",
-            "showInSlide": true
+            "showInSlide": false
         },
         {
             "image": "./assets/images/carrossel/RIO DE JANEIRO/riodejaneiro-3.jpeg",
@@ -102,7 +102,7 @@
             "title": "Porto Alegre - MG",
             "description": "Área externa ampla e integrada à natureza, ideal para momentos de tranquilidade",
             "details": "Contato com a natureza · Espaço de convivência · Atmosfera acolhedora",
-            "showInSlide": true
+            "showInSlide": false
         },
         {
             "image": "./assets/images/carrossel/PORTO ALEGRE/portoalegre-2.webp",
@@ -190,7 +190,7 @@
             "title": "São Cristóvão - SE",
             "description": "Piscina convidativa em área de lazer para momentos de descontração",
             "details": "Lazer · Diversão · Bem-estar",
-            "showInSlide": true
+            "showInSlide": false
         },
         {
             "image": "./assets/images/carrossel/SAO CRISTOVAO/saocristovao-7.webp",
@@ -230,7 +230,7 @@
             "title": "Xangrilá - SP",
             "description": "Clínica Xangrilá vista de fora, com entrada principal acolhedora",
             "details": "Recepção · Acolhimento · Profissionalismo",
-            "showInSlide": true
+            "showInSlide": false
         },
         {
             "image": "./assets/images/carrossel/XANGRI LA/xangrila-2.webp",
@@ -286,7 +286,7 @@
             "title": "Salvador - BA",
             "description": "Participantes reunidos ao redor da piscina, combinando lazer e networking",
             "details": "Lazer · Convívio · Bem-estar",
-            "showInSlide": true
+            "showInSlide": false
         },
         {
             "image": "./assets/images/carrossel/SALVADOR/salvador-5.webp",
