@@ -102,7 +102,7 @@
             "title": "Porto Alegre - MG",
             "description": "Área externa ampla e integrada à natureza, ideal para momentos de tranquilidade",
             "details": "Contato com a natureza · Espaço de convivência · Atmosfera acolhedora",
-            "showInSlide": false
+            "showInSlide": true
         },
         {
             "image": "./assets/images/carrossel/PORTO ALEGRE/portoalegre-2.webp",
@@ -227,7 +227,7 @@
         {
             "image": "./assets/images/carrossel/XANGRI LA/xangrila-1.webp",
             "alt": "Fachada da clínica Xangrilá",
-            "title": "Xangrilá - SP",
+            "title": "Xangrilá - RS",
             "description": "Clínica Xangrilá vista de fora, com entrada principal acolhedora",
             "details": "Recepção · Acolhimento · Profissionalismo",
             "showInSlide": false
@@ -235,7 +235,7 @@
         {
             "image": "./assets/images/carrossel/XANGRI LA/xangrila-2.webp",
             "alt": "Reunião de pessoas na piscina da clínica Xangrilá",
-            "title": "Xangrilá - SP",
+            "title": "Xangrilá - RS",
             "description": "Pessoas aproveitando a piscina durante reunião ao ar livre, integração e descontração",
             "details": "Lazer · Convívio · Relaxamento",
             "showInSlide": true
@@ -243,7 +243,7 @@
         {
             "image": "./assets/images/carrossel/XANGRI LA/xangrila-3.webp",
             "alt": "Área de lazer com mesa de sinuca em Xangrilá",
-            "title": "Xangrilá - SP",
+            "title": "Xangrilá - RS",
             "description": "Espaço de lazer interno com mesa de sinuca, perfeito para diversão e socialização",
             "details": "Diversão · Convívio · Relaxamento",
             "showInSlide": false
@@ -251,7 +251,7 @@
         {
             "image": "./assets/images/carrossel/XANGRI LA/xangrila-4.webp",
             "alt": "Planta decorativa na clínica Xangrilá",
-            "title": "Xangrilá - SP",
+            "title": "Xangrilá - RS",
             "description": "Detalhe de uma planta decorativa, trazendo vida e frescor ao ambiente",
             "details": "Decoração · Natureza · Harmonia",
             "showInSlide": false
